@@ -1,0 +1,9 @@
+{
+  startingLocations:  {
+        King: {
+            color: 'black'
+            locationX: 'a'
+            locationY: '1'
+          }
+    }
+}
