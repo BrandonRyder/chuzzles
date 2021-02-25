@@ -5,18 +5,22 @@ const Piece = ({piece}: {piece: string}) => {
     const [color, setColor] = useState('neutral')
     const onClick = () => {
       if(color === 'neutral'){
-          setColor("white")
+          setColor('white')
+      }else if(color === 'white'){
+          setColor('black')
       }else{
-          setColor("neutral")
+        setColor('neutral')
       }
     }
+
     return(
       <div>
         <a>
-          <img src={`/${color}/${piece}.png`} className={"center"} onClick={onClick}/>
+          <img src={`/pieceLibrary/${color}/${piece}.png`} className={"center"} onClick={onClick}/>
         </a>
       </div>
     )
+
 }
 
 export default Piece
