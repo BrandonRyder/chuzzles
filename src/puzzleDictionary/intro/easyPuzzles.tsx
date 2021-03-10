@@ -3,12 +3,23 @@ const easyPuzzles = {
     {
       type: "King",
       color: "black",
-      location: "a1"
+      currentColor: "black",
+      location: "a1",
+      solutionColor: "black"
     },
     {
       type: "Horse",
       color: "neutral",
-      location: "a3"
+      currentColor: "neutral",
+      location: "a3",
+      solutionColor: "white"
+    },
+    {
+      type: "Queen",
+      color: "neutral",
+      currentColor: "neutral",
+      location: "b1",
+      solutionColor: "white"
     }
   ]
 }
