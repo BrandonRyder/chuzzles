@@ -25,36 +25,4 @@ const Piece = ({piece, pieceColor}: {piece: string, pieceColor: string}) => {
       </div>
     )
 }
-
-
-
-//call checkSolution after a piece is changed in the Square function I think
-const CheckSolution = () => {
-
-  const puzzlePieceDefinitions = easyPuzzles.puzzle_1
-  const [status, setStatus] = useState(true)
-
-
-  puzzlePieceDefinitions.forEach(piece => {
-    if(piece.currentColor != piece.solutionColor){
-       setStatus(false)
-    }
-  })
-  if(!status){
-    return <div> </div>
-  }else{
-    return(
-      <Alert
-        action={
-          <Button color="inherit" size="small">
-            UNDO
-          </Button>
-        }
-      >
-      This is a success alert — check it out!
-      </Alert>
-    )
-  }
-}
-
-export {Piece, CheckSolution}
+export {Piece}
