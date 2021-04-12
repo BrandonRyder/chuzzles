@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { ChessContextProvider } from '../components/ChessContext';
 import PuzzlePopupMessage from '../components/PuzzlePopupMessage';
-import Board from '../components/sketchBoard';
 import { NavBar } from './sharedElements'
+import ChessBoard from "../components/ChessBoard";
 const Puzzle = () => {
 
   //component refresh through up here
@@ -10,7 +10,7 @@ const Puzzle = () => {
       <div>
         <NavBar />
         <ChessContextProvider>
-          <Board />
+          <ChessBoard />
           <PuzzlePopupMessage />
         </ChessContextProvider>
       </div>
